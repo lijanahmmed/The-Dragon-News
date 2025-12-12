@@ -32,7 +32,7 @@
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend:** React.js  
 - **Routing:** React Router v6  
@@ -88,7 +88,7 @@
 git clone https://github.com/lijanahmmed/The-Dragon-News.git
 
 # Navigate to project
-cd the-dragon-news
+cd The-Dragon-News
 
 # Install dependencies
 npm install
