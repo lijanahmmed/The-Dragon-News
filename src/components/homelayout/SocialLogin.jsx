@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router";
 
 const SocialLogin = () => {
-  const { setUser, signInWithGoogle, signInWithGithub, setLoading } =
+  const { user, setUser, signInWithGoogle, signInWithGithub, setLoading } =
     useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -39,21 +39,27 @@ const SocialLogin = () => {
 
   return (
     <div>
-      <h2 className="font-bold mb-5">Login With</h2>
-      <div className="space-y-3">
-        <button
-          onClick={handleGoogleSignin}
-          className="btn btn-secondary btn-outline w-full"
-        >
-          <FcGoogle size={24} /> Login with Google
-        </button>
-        <button
-          onClick={handleGithubSignin}
-          className="btn btn-outline btn-primary w-full"
-        >
-          <FaGithub size={24} /> Login with Github
-        </button>
-      </div>
+      {user ? (
+        ""
+      ) : (
+        <div>
+          <h2 className="font-bold mb-5">Login With</h2>
+          <div className="space-y-3">
+            <button
+              onClick={handleGoogleSignin}
+              className="btn btn-secondary btn-outline w-full"
+            >
+              <FcGoogle size={24} /> Login with Google
+            </button>
+            <button
+              onClick={handleGithubSignin}
+              className="btn btn-outline btn-primary w-full"
+            >
+              <FaGithub size={24} /> Login with Github
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
