@@ -5,6 +5,7 @@ import LatestNews from "../components/LatestNews";
 import Navbar from "../components/Navbar";
 import LeftAside from "../components/homelayout/LeftAside";
 import RighAside from "../components/homelayout/RighAside";
+import Footer from "../components/homelayout/Footer";
 
 const HomeLayout = () => {
   return (
@@ -29,6 +30,7 @@ const HomeLayout = () => {
           <RighAside></RighAside>
         </aside>
       </main>
+      <Footer></Footer>
     </div>
   );
 };
