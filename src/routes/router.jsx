@@ -8,6 +8,7 @@ import AuthLayout from "../layouts/AuthLayout";
 import NewsDetails from "../pages/NewsDetails";
 import PrivateRoute from "../provider/PrivateRoute";
 import About from "../pages/About";
+import Career from "../pages/Career";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        
       },
       {
         path: "/category/:id",
@@ -27,8 +27,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About></About>
-      }
+        element: <About></About>,
+      },
+      {
+        path: "/career",
+        element: <Career></Career>,
+      },
     ],
   },
   {
