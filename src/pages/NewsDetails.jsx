@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import RighAside from "../components/homelayout/RighAside";
 import NewsDetailsCard from "../components/NewsDetailsCard";
 import { useLoaderData, useParams } from "react-router";
+import Footer from "../components/homelayout/Footer";
 
 const NewsDetails = () => {
   const data = useLoaderData();
@@ -27,6 +28,7 @@ const NewsDetails = () => {
           <RighAside></RighAside>
         </aside>
       </main>
+      <Footer></Footer>
     </div>
   );
 };
